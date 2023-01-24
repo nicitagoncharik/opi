@@ -12,8 +12,8 @@ namespace main_project
         public TimeSpan test(string[,] mas)
         {
             int count = mas.GetLength(0);
-            TimeSpan max = new TimeSpan(00, 00, 00);
-            TimeSpan nol = new TimeSpan(00, 00, 00);
+            TimeSpan max = new TimeSpan(12, 35, 00);
+            TimeSpan nol = new TimeSpan(10, 10, 10);
             for (int i = 0; i < count; i++)
             {
                 DateTime start1 = Convert.ToDateTime(mas[i, 0]);
