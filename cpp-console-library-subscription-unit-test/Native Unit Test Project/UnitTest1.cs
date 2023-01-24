@@ -12,7 +12,7 @@ namespace Native_Unit_Test_Project
             public void TestMethod1()
             {
                   process p = new process();
-                  string[,] arr = { {"12:00:00", "14:32:18"}, { "12:00:00", "14:31:39" }, { "12:00:00", "14:33:19" } };
+                  string[,] arr = { {"10:00:00", "12:32:18"}, { "10:00:00", "12:31:39" }, { "10:00:00", "12:33:19" } };
                   TimeSpan timeSpan = new TimeSpan(02, 31, 39);
                   TimeSpan timeSpan1 = p.test(arr);
                    Assert.AreEqual(timeSpan, timeSpan1);
@@ -22,7 +22,7 @@ namespace Native_Unit_Test_Project
             public void TestMethod2()
             {
                 process p = new process();
-                string[,] arr = { { "12:00:00", "13:32:18" }, { "12:00:00", "13:31:39" }, { "12:00:00", "13:33:19" } };
+                string[,] arr = { { "10:00:00", "11:32:18" }, { "10:00:00", "11:31:39" }, { "10:00:00", "11:33:19" } };
                 TimeSpan timeSpan = new TimeSpan(01, 31, 39);
                 TimeSpan timeSpan1 = p.test(arr);
                 Assert.AreEqual(timeSpan, timeSpan1);
@@ -32,7 +32,7 @@ namespace Native_Unit_Test_Project
             public void TestMethod3()
             {
                 process p = new process();
-                string[,] arr = { { "12:00:00", "12:32:18" }, { "12:00:00", "12:31:39" }, { "12:00:00", "12:33:19" } };
+                string[,] arr = { { "10:00:00", "10:32:18" }, { "10:00:00", "10:31:39" }, { "10:00:00", "10:33:19" } };
                 TimeSpan timeSpan = new TimeSpan(00, 31, 39);
                 TimeSpan timeSpan1 = p.test(arr);
                 Assert.AreEqual(timeSpan, timeSpan1);
